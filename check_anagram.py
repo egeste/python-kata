@@ -1,5 +1,3 @@
-# Determine if two strings are anagrams of each other.
-
 import argparse
 
 def word_to_dict(string):

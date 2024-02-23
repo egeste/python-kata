@@ -7,6 +7,7 @@ import argparse
 
 def fizzbuzz(n) -> str: 
   output = ""
+  if (n == 0): return output
   if (n % 3 == 0): output += "Fizz"
   if (n % 5 == 0): output += "Buzz"
   return output

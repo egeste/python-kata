@@ -2,11 +2,8 @@
 
 import argparse
 
-def revstring(string) -> str: 
-  output = ""
-  for char in string:
-    output = char + output
-  return output
+def revstring(string) -> str:
+  return string[::-1]
  
 def main():
   parser = argparse.ArgumentParser(description="Reverse string")

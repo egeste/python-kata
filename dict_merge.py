@@ -1,6 +1,6 @@
 # Write a script to merge two Python dictionaries.
 
-dict_1 = ['a', 'c', '2', 'doe', 'mee', 'and', 'girl']
+dict_1 = ['a', 'c', '2', 'doe', 'mee', 'and']
 dict_2 = ['b', '1', '3', 'rae', 'you', 'me']
 
 def zipper_merge(a, b):

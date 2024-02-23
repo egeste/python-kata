@@ -3,9 +3,11 @@
 import argparse
 
 def file_rw(from_filename) -> bool:
-  with open(from_filename, mode='+a') as from_file:
+  with open(from_filename, mode='r+') as from_file:
+    file_contents = from_file.read()
     from_file.write('\n')
-    return from_file.read()
+    from_file.close()
+    return file_contents
 
 def main():
   parser = argparse.ArgumentParser(description='Read a file and then write a newline to it')
